@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, XHRBackend, RequestOptions } from '@angular/http';
-import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+// import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { StoreModule, Store } from '@ngrx/store';
 import { RouterStoreModule } from '@ngrx/router-store';
 import { routes, AppRoutes } from './app.routes';
@@ -86,10 +86,10 @@ import 'rxjs/add/observable/of';
     ReactiveFormsModule,
     HttpModule,
     AppRoutes,
-    AngularFireModule.initializeApp(firebaseConfig, {
-      provider: AuthProviders.Google,
-      method: AuthMethods.Popup
-    }),
+    // AngularFireModule.initializeApp(firebaseConfig, {
+    //   provider: AuthProviders.Google,
+    //   method: AuthMethods.Popup
+    // }),
     RouterModule.forRoot(routes),
     StoreModule.provideStore(reducer, {
       router: {

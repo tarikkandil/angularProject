@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { AngularFire, AuthProviders } from 'angularfire2';
+// import { AngularFire, AuthProviders } from 'angularfire2';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { AppState, getProgressStatus, getNotifications } from './reducers/index';
