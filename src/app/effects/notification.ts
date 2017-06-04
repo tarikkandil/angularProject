@@ -15,17 +15,17 @@ export class NotificationEffects {
     private store: Store<AppState>
   ) {}
 
-  @Effect() showProgress$: Observable<Action> = this.actions$
-    .ofType(notification.ActionTypes.SHOW_PROGRESS)
-    .map(() => new notification.ShowProgressSuccessAction())
+  // @Effect() showProgress$: Observable<Action> = this.actions$
+  //   .ofType(notification.ActionTypes.SHOW_PROGRESS)
+  //   .map(() => new notification.ShowProgressSuccessAction())
   
-  @Effect() completeProgress$: Observable<Action> = this.actions$
-    .ofType(notification.ActionTypes.COMPLETE_PROGRESS)
-    .map(() => new notification.CompleteProgressSuccessAction())
+  // @Effect() completeProgress$: Observable<Action> = this.actions$
+  //   .ofType(notification.ActionTypes.COMPLETE_PROGRESS)
+  //   .map(() => new notification.CompleteProgressSuccessAction())
 
-  @Effect() showNotification$: Observable<Action> = this.actions$
-    .ofType(notification.ActionTypes.POP_NOTIFICATION)
-    .map(action => action.payload)
-    .map((toastr: Toastr) => new notification.PopNotificationSuccessAction(toastr))
+  // @Effect() showNotification$: Observable<Action> = this.actions$
+  //   .ofType(notification.ActionTypes.POP_NOTIFICATION)
+  //   .map(action => action.payload)
+  //   .map((toastr: Toastr) => new notification.PopNotificationSuccessAction(toastr))
 
 }
